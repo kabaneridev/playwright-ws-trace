@@ -1,0 +1,42 @@
+{
+  "name": "playwright-ws-trace",
+  "version": "1.0.0",
+  "description": "Adds WebSocket frame tracing to Playwright trace viewer",
+  "author": "kabaneridev",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kabaneridev/playwright-ws-trace"
+  },
+  "homepage": "https://github.com/kabaneridev/playwright-ws-trace#readme",
+  "bugs": {
+    "url": "https://github.com/kabaneridev/playwright-ws-trace/issues"
+  },
+  "keywords": [
+    "playwright",
+    "websocket",
+    "trace",
+    "tracing",
+    "debugging",
+    "testing",
+    "e2e",
+    "automation"
+  ],
+  "main": "src/index.js",
+  "scripts": {
+    "postinstall": "node scripts/postinstall.js"
+  },
+  "peerDependencies": {
+    "@playwright/test": ">=1.40.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "scripts/postinstall.js",
+    "dist/",
+    "src/",
+    "README.md",
+    "LICENSE"
+  ]
+}
