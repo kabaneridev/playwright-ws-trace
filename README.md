@@ -77,7 +77,7 @@ In the trace viewer:
 
 ## Screenshot
 
-![Trace Viewer with WS filter](https://raw.githubusercontent.com/kabaneridev/playwright-ws-trace/main/docs/screenshot.png)
+![Trace Viewer with WS filter](https://raw.githubusercontent.com/kabaneridev/playwright-ws-trace/main/demo.png)
 
 ## How it works
 
@@ -99,9 +99,8 @@ This package patches Playwright on install:
 
 | Playwright | Status |
 |------------|--------|
-| 1.49.x     | ✅ Tested |
-| 1.48.x     | ✅ Should work |
-| 1.40.0+    | ⚠️ May work |
+| 1.50.x - 1.56.x | ✅ Tested |
+| 1.40.0+    | ⚠️ Should work |
 
 ## After Playwright Updates
 
