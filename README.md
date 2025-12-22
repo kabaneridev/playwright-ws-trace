@@ -4,7 +4,7 @@
 
 [![npm version](https://badge.fury.io/js/playwright-ws-trace.svg)](https://www.npmjs.com/package/playwright-ws-trace)
 
-Microsoft rejected our [PR #38427](https://github.com/microsoft/playwright/pull/38427) to add WebSocket tracing to Playwright. So we made it ourselves. 💪
+This package implements the long-requested feature from [Issue #10996](https://github.com/microsoft/playwright/issues/10996) (👍 49+ upvotes since 2021). Microsoft rejected our [PR #38427](https://github.com/microsoft/playwright/pull/38427), so we made it ourselves. 💪
 
 ## Features
 
