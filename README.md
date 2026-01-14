@@ -22,9 +22,29 @@ npm install playwright-ws-trace
 yarn add playwright-ws-trace
 # or
 pnpm add playwright-ws-trace
+# or
+bun add playwright-ws-trace
 ```
 
 The package automatically patches your Playwright installation on install. That's it!
+
+### Bun Users
+
+Bun doesn't run postinstall scripts by default for security. Add `playwright-ws-trace` to `trustedDependencies` in your `package.json`:
+
+```json
+{
+  "trustedDependencies": [
+    "playwright-ws-trace"
+  ]
+}
+```
+
+Then reinstall:
+
+```bash
+bun install
+```
 
 ## Usage
 
@@ -116,7 +136,19 @@ node node_modules/playwright-ws-trace/scripts/postinstall.js --force
 
 ## Troubleshooting
 
-### Patches not applying
+### Bun: Patches not applying
+
+Bun doesn't run postinstall scripts by default. Add to `package.json`:
+
+```json
+{
+  "trustedDependencies": ["playwright-ws-trace"]
+}
+```
+
+Then run `bun install` again.
+
+### npm/yarn/pnpm: Patches not applying
 
 Run the postinstall script with `--force`:
 

@@ -37,6 +37,23 @@ function findPlaywrightCore() {
     }
   }
 
+  // Bun monorepo: packages are hoisted to node_modules/.bun/
+  const bunDir = path.join(process.cwd(), 'node_modules', '.bun');
+  if (fs.existsSync(bunDir)) {
+    try {
+      const entries = fs.readdirSync(bunDir);
+      const pwCoreDir = entries.find(e => e.startsWith('playwright-core@'));
+      if (pwCoreDir) {
+        const bunPath = path.join(bunDir, pwCoreDir, 'node_modules', 'playwright-core');
+        if (fs.existsSync(bunPath)) {
+          return bunPath;
+        }
+      }
+    } catch {
+      // ignore errors reading .bun directory
+    }
+  }
+
   try {
     const resolved = require.resolve('playwright-core/package.json', { paths: [process.cwd()] });
     return path.dirname(resolved);
