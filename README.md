@@ -119,7 +119,7 @@ This package patches Playwright on install:
 
 | Playwright | Status |
 |------------|--------|
-| 1.50.x - 1.56.x | ✅ Tested |
+| 1.50.x - 1.58.x | ✅ Tested |
 | 1.40.0+    | ⚠️ Should work |
 
 ## After Playwright Updates
